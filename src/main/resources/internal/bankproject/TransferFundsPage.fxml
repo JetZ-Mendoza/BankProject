@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="internal.bankproject.TransferFundsController">
+
+    <VBox alignment="CENTER" layoutX="152.0" layoutY="130.0" prefHeight="129.0" prefWidth="295.0" spacing="10">
+        <ComboBox fx:id="paymentChannelBox" prefHeight="26.0" prefWidth="336.0" promptText="Select Payment Channel" />
+        <TextField fx:id="accountNumberField" prefHeight="26.0" prefWidth="336.0" promptText="Enter Target Account Number" />
+        <TextField fx:id="amountField" prefHeight="26.0" prefWidth="322.0" promptText="Enter Amount" />
+
+        <Button onAction="#handleTransferAction" text="Transfer" />
+    </VBox>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="19.0" layoutY="382.0" stroke="BLACK" strokeType="INSIDE" width="607.0">
+      <fill>
+         <LinearGradient endX="0.00757576480056299" startX="0.3607954536423539" startY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.14830408990383148" green="0.4736842215061188" blue="0.09824561327695847" />
+                  </color>
+               </Stop>
+               <Stop offset="0.6923076923076923">
+                  <color>
+                     <Color red="0.14901961386203766" green="0.5372549295425415" blue="0.10588235408067703" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill></Rectangle>
+
+</AnchorPane>
